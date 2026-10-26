@@ -1,0 +1,9 @@
+node_modules
+.git
+data
+.env*
+server/catalog.private.json
+docs
+scripts
+tests
+README.md

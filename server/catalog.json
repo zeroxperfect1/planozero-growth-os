@@ -1,0 +1,1443 @@
+{
+  "version": "2026-10-catalog-v4",
+  "profiles": [
+    {
+      "id": "profile-1",
+      "name": "Arquitecto/a de negocios",
+      "area": "Estrategia",
+      "description": "Diagnóstico, modelo de negocio, prioridades y conducción ejecutiva.",
+      "cost": 41000,
+      "currency": "CLP",
+      "source": "Matriz de perfiles · costo ilustrativo · publicación pública",
+      "active": true
+    },
+    {
+      "id": "profile-2",
+      "name": "Project Manager",
+      "area": "Gestión",
+      "description": "Planificación, coordinación, seguimiento, reuniones y control de alcance.",
+      "cost": 33000,
+      "currency": "CLP",
+      "source": "Matriz de perfiles · costo ilustrativo · publicación pública",
+      "active": true
+    },
+    {
+      "id": "profile-3",
+      "name": "Brand Strategist",
+      "area": "Brand Systems",
+      "description": "Posicionamiento, propuesta de valor, relato y arquitectura de marca.",
+      "cost": 29000,
+      "currency": "CLP",
+      "source": "Matriz de perfiles · costo ilustrativo · publicación pública",
+      "active": true
+    },
+    {
+      "id": "profile-4",
+      "name": "Director/a de Arte",
+      "area": "Brand Systems",
+      "description": "Dirección visual, concepto creativo y control de consistencia.",
+      "cost": 31000,
+      "currency": "CLP",
+      "source": "Matriz de perfiles · costo ilustrativo · publicación pública",
+      "active": true
+    },
+    {
+      "id": "profile-5",
+      "name": "Diseñador/a Gráfico/a",
+      "area": "Brand Systems",
+      "description": "Identidad, aplicaciones, piezas y documentación visual.",
+      "cost": 21000,
+      "currency": "CLP",
+      "source": "Matriz de perfiles · costo ilustrativo · publicación pública",
+      "active": true
+    },
+    {
+      "id": "profile-6",
+      "name": "Diseñador/a UX/UI",
+      "area": "Digital Experiences",
+      "description": "Arquitectura de información, flujos, wireframes, interfaz y prototipo.",
+      "cost": 26000,
+      "currency": "CLP",
+      "source": "Matriz de perfiles · costo ilustrativo · publicación pública",
+      "active": true
+    },
+    {
+      "id": "profile-7",
+      "name": "Desarrollador/a Web",
+      "area": "Digital Experiences",
+      "description": "Frontend, backend, integraciones, implementación y despliegue.",
+      "cost": 33000,
+      "currency": "CLP",
+      "source": "Matriz de perfiles · costo ilustrativo · publicación pública",
+      "active": true
+    },
+    {
+      "id": "profile-8",
+      "name": "Especialista CRM / GoHighLevel",
+      "area": "CRM",
+      "description": "Pipelines, campos, automatizaciones, permisos, configuración y soporte.",
+      "cost": 29000,
+      "currency": "CLP",
+      "source": "Matriz de perfiles · costo ilustrativo · publicación pública",
+      "active": true
+    },
+    {
+      "id": "profile-9",
+      "name": "Especialista Automatización / IA",
+      "area": "AI Systems",
+      "description": "Agentes, workflows, prompts, knowledge bases e integraciones.",
+      "cost": 37000,
+      "currency": "CLP",
+      "source": "Matriz de perfiles · costo ilustrativo · publicación pública",
+      "active": true
+    },
+    {
+      "id": "profile-10",
+      "name": "Analista de Datos / BI",
+      "area": "Datos",
+      "description": "Métricas, modelos, dashboards, reportería y lectura de desempeño.",
+      "cost": 29000,
+      "currency": "CLP",
+      "source": "Matriz de perfiles · costo ilustrativo · publicación pública",
+      "active": true
+    },
+    {
+      "id": "profile-11",
+      "name": "Especialista Paid Media",
+      "area": "Marketing",
+      "description": "Meta Ads, Google Ads, seguimiento, optimización y reportería.",
+      "cost": 23000,
+      "currency": "CLP",
+      "source": "Matriz de perfiles · costo ilustrativo · publicación pública",
+      "active": true
+    },
+    {
+      "id": "profile-12",
+      "name": "Content Strategist / Copywriter",
+      "area": "Contenido",
+      "description": "Plan editorial, mensajes, guiones, copies y dirección de contenidos.",
+      "cost": 21000,
+      "currency": "CLP",
+      "source": "Matriz de perfiles · costo ilustrativo · publicación pública",
+      "active": true
+    },
+    {
+      "id": "profile-13",
+      "name": "Social Media Manager",
+      "area": "Contenido",
+      "description": "Calendario, publicación, comunidad, coordinación y seguimiento.",
+      "cost": 19000,
+      "currency": "CLP",
+      "source": "Matriz de perfiles · costo ilustrativo · publicación pública",
+      "active": true
+    },
+    {
+      "id": "profile-14",
+      "name": "QA / Soporte",
+      "area": "Operación",
+      "description": "Pruebas, documentación, soporte, control de calidad y cierre.",
+      "cost": 19000,
+      "currency": "CLP",
+      "source": "Matriz de perfiles · costo ilustrativo · publicación pública",
+      "active": true
+    }
+  ],
+  "offers": [
+    {
+      "id": "P-01",
+      "name": "Pack Presencia",
+      "category": "Pack proyecto",
+      "subtitle": "Proyecto",
+      "description": "Marca y base digital listas para vender.",
+      "clpMin": 1125000,
+      "clpMax": 1125000,
+      "eurMin": 0,
+      "eurMax": 0,
+      "usdMin": 0,
+      "usdMax": 0,
+      "duration": "Según alcance",
+      "hours": 18,
+      "margin": 34,
+      "deliverables": "Marca y base digital listas para vender.",
+      "recurring": false,
+      "source": "Matriz comercial y HH · valores ilustrativos · publicación pública",
+      "allocations": [
+        {
+          "profileId": "profile-1",
+          "hours": 3
+        },
+        {
+          "profileId": "profile-3",
+          "hours": 4
+        },
+        {
+          "profileId": "profile-4",
+          "hours": 3
+        },
+        {
+          "profileId": "profile-6",
+          "hours": 3
+        },
+        {
+          "profileId": "profile-7",
+          "hours": 3
+        },
+        {
+          "profileId": "profile-2",
+          "hours": 2
+        }
+      ]
+    },
+    {
+      "id": "P-02",
+      "name": "Pack Ventas",
+      "category": "Pack proyecto",
+      "subtitle": "Proyecto",
+      "description": "Proceso comercial, CRM, contenido y reportería.",
+      "clpMin": 4625000,
+      "clpMax": 4625000,
+      "eurMin": 0,
+      "eurMax": 0,
+      "usdMin": 0,
+      "usdMax": 0,
+      "duration": "Según alcance",
+      "hours": 60,
+      "margin": 34,
+      "deliverables": "Proceso comercial, CRM, contenido y reportería.",
+      "recurring": false,
+      "source": "Matriz comercial y HH · valores ilustrativos · publicación pública",
+      "allocations": [
+        {
+          "profileId": "profile-1",
+          "hours": 6
+        },
+        {
+          "profileId": "profile-2",
+          "hours": 6
+        },
+        {
+          "profileId": "profile-8",
+          "hours": 18
+        },
+        {
+          "profileId": "profile-7",
+          "hours": 6
+        },
+        {
+          "profileId": "profile-12",
+          "hours": 6
+        },
+        {
+          "profileId": "profile-13",
+          "hours": 8
+        },
+        {
+          "profileId": "profile-11",
+          "hours": 4
+        },
+        {
+          "profileId": "profile-10",
+          "hours": 4
+        },
+        {
+          "profileId": "profile-14",
+          "hours": 2
+        }
+      ]
+    },
+    {
+      "id": "P-03",
+      "name": "Pack Automatización IA",
+      "category": "Pack proyecto",
+      "subtitle": "Proyecto",
+      "description": "Procesos, automatizaciones, asistente IA e integraciones.",
+      "clpMin": 4925000,
+      "clpMax": 4925000,
+      "eurMin": 0,
+      "eurMax": 0,
+      "usdMin": 0,
+      "usdMax": 0,
+      "duration": "Según alcance",
+      "hours": 64,
+      "margin": 34,
+      "deliverables": "Procesos, automatizaciones, asistente IA e integraciones.",
+      "recurring": false,
+      "source": "Matriz comercial y HH · valores ilustrativos · publicación pública",
+      "allocations": [
+        {
+          "profileId": "profile-1",
+          "hours": 5
+        },
+        {
+          "profileId": "profile-2",
+          "hours": 6
+        },
+        {
+          "profileId": "profile-9",
+          "hours": 25
+        },
+        {
+          "profileId": "profile-7",
+          "hours": 10
+        },
+        {
+          "profileId": "profile-8",
+          "hours": 6
+        },
+        {
+          "profileId": "profile-10",
+          "hours": 5
+        },
+        {
+          "profileId": "profile-12",
+          "hours": 3
+        },
+        {
+          "profileId": "profile-14",
+          "hours": 4
+        }
+      ]
+    },
+    {
+      "id": "P-04",
+      "name": "Pack Sistema Integral",
+      "category": "Pack proyecto",
+      "subtitle": "Proyecto",
+      "description": "Marca, experiencia, desarrollo, marketing, CRM e IA.",
+      "clpMin": 8625000,
+      "clpMax": 8625000,
+      "eurMin": 0,
+      "eurMax": 0,
+      "usdMin": 0,
+      "usdMax": 0,
+      "duration": "Según alcance",
+      "hours": 124,
+      "margin": 34,
+      "deliverables": "Marca, experiencia, desarrollo, marketing, CRM e IA.",
+      "recurring": false,
+      "source": "Matriz comercial y HH · valores ilustrativos · publicación pública",
+      "allocations": [
+        {
+          "profileId": "profile-1",
+          "hours": 12
+        },
+        {
+          "profileId": "profile-2",
+          "hours": 12
+        },
+        {
+          "profileId": "profile-3",
+          "hours": 10
+        },
+        {
+          "profileId": "profile-4",
+          "hours": 10
+        },
+        {
+          "profileId": "profile-5",
+          "hours": 8
+        },
+        {
+          "profileId": "profile-6",
+          "hours": 14
+        },
+        {
+          "profileId": "profile-7",
+          "hours": 22
+        },
+        {
+          "profileId": "profile-8",
+          "hours": 10
+        },
+        {
+          "profileId": "profile-9",
+          "hours": 10
+        },
+        {
+          "profileId": "profile-12",
+          "hours": 4
+        },
+        {
+          "profileId": "profile-11",
+          "hours": 4
+        },
+        {
+          "profileId": "profile-10",
+          "hours": 2
+        },
+        {
+          "profileId": "profile-13",
+          "hours": 1
+        },
+        {
+          "profileId": "profile-14",
+          "hours": 5
+        }
+      ]
+    },
+    {
+      "id": "F-01",
+      "name": "Crecimiento",
+      "category": "Pack fee",
+      "subtitle": "Fee mensual",
+      "description": "Contenido, campañas, medición y mejora.",
+      "clpMin": 1325000,
+      "clpMax": 1325000,
+      "eurMin": 0,
+      "eurMax": 0,
+      "usdMin": 0,
+      "usdMax": 0,
+      "duration": "Mensual",
+      "hours": 20,
+      "margin": 34,
+      "deliverables": "Contenido, campañas, medición y mejora.",
+      "recurring": true,
+      "source": "Matriz comercial y HH · valores ilustrativos · publicación pública",
+      "allocations": [
+        {
+          "profileId": "profile-2",
+          "hours": 2
+        },
+        {
+          "profileId": "profile-12",
+          "hours": 6
+        },
+        {
+          "profileId": "profile-13",
+          "hours": 6
+        },
+        {
+          "profileId": "profile-11",
+          "hours": 4
+        },
+        {
+          "profileId": "profile-10",
+          "hours": 2
+        }
+      ]
+    },
+    {
+      "id": "F-02",
+      "name": "Performance Comercial",
+      "category": "Pack fee",
+      "subtitle": "Fee mensual",
+      "description": "Campañas, CRM, contenido, dashboard y reunión de mejora.",
+      "clpMin": 1775000,
+      "clpMax": 1775000,
+      "eurMin": 0,
+      "eurMax": 0,
+      "usdMin": 0,
+      "usdMax": 0,
+      "duration": "Mensual",
+      "hours": 24,
+      "margin": 34,
+      "deliverables": "Campañas, CRM, contenido, dashboard y reunión de mejora.",
+      "recurring": true,
+      "source": "Matriz comercial y HH · valores ilustrativos · publicación pública",
+      "allocations": [
+        {
+          "profileId": "profile-2",
+          "hours": 3
+        },
+        {
+          "profileId": "profile-11",
+          "hours": 5
+        },
+        {
+          "profileId": "profile-13",
+          "hours": 4
+        },
+        {
+          "profileId": "profile-12",
+          "hours": 4
+        },
+        {
+          "profileId": "profile-8",
+          "hours": 4
+        },
+        {
+          "profileId": "profile-10",
+          "hours": 3
+        },
+        {
+          "profileId": "profile-1",
+          "hours": 1
+        }
+      ]
+    },
+    {
+      "id": "F-03",
+      "name": "Evolución Digital",
+      "category": "Pack fee",
+      "subtitle": "Fee mensual",
+      "description": "Soporte web, UX, ajustes técnicos y analítica.",
+      "clpMin": 1075000,
+      "clpMax": 1075000,
+      "eurMin": 0,
+      "eurMax": 0,
+      "usdMin": 0,
+      "usdMax": 0,
+      "duration": "Mensual",
+      "hours": 16,
+      "margin": 34,
+      "deliverables": "Soporte web, UX, ajustes técnicos y analítica.",
+      "recurring": true,
+      "source": "Matriz comercial y HH · valores ilustrativos · publicación pública",
+      "allocations": [
+        {
+          "profileId": "profile-2",
+          "hours": 2
+        },
+        {
+          "profileId": "profile-6",
+          "hours": 4
+        },
+        {
+          "profileId": "profile-7",
+          "hours": 5
+        },
+        {
+          "profileId": "profile-14",
+          "hours": 3
+        },
+        {
+          "profileId": "profile-10",
+          "hours": 1
+        },
+        {
+          "profileId": "profile-9",
+          "hours": 1
+        }
+      ]
+    },
+    {
+      "id": "F-04",
+      "name": "IA Operativa",
+      "category": "Pack fee",
+      "subtitle": "Fee mensual",
+      "description": "Monitoreo y mejora de bots, asistentes y flujos.",
+      "clpMin": 975000,
+      "clpMax": 975000,
+      "eurMin": 0,
+      "eurMax": 0,
+      "usdMin": 0,
+      "usdMax": 0,
+      "duration": "Mensual",
+      "hours": 12,
+      "margin": 34,
+      "deliverables": "Monitoreo y mejora de bots, asistentes y flujos.",
+      "recurring": true,
+      "source": "Matriz comercial y HH · valores ilustrativos · publicación pública",
+      "allocations": [
+        {
+          "profileId": "profile-2",
+          "hours": 1
+        },
+        {
+          "profileId": "profile-9",
+          "hours": 7
+        },
+        {
+          "profileId": "profile-10",
+          "hours": 2
+        },
+        {
+          "profileId": "profile-14",
+          "hours": 2
+        }
+      ]
+    },
+    {
+      "id": "S-01",
+      "name": "Diagnóstico digital/comercial",
+      "category": "Servicio individual",
+      "subtitle": "Servicio puntual",
+      "description": "Auditoría de marca, sitio, canales y procesos.",
+      "clpMin": 525000,
+      "clpMax": 525000,
+      "eurMin": 0,
+      "eurMax": 0,
+      "usdMin": 0,
+      "usdMax": 0,
+      "duration": "Según alcance",
+      "hours": 8,
+      "margin": 34,
+      "deliverables": "Auditoría de marca, sitio, canales y procesos.",
+      "recurring": false,
+      "source": "Matriz comercial y HH · valores ilustrativos · publicación pública",
+      "allocations": [
+        {
+          "profileId": "profile-1",
+          "hours": 5
+        },
+        {
+          "profileId": "profile-2",
+          "hours": 2
+        },
+        {
+          "profileId": "profile-10",
+          "hours": 1
+        }
+      ]
+    },
+    {
+      "id": "S-02",
+      "name": "Branding esencial",
+      "category": "Servicio individual",
+      "subtitle": "Proyecto",
+      "description": "Posicionamiento, relato e identidad visual base.",
+      "clpMin": 1025000,
+      "clpMax": 1025000,
+      "eurMin": 0,
+      "eurMax": 0,
+      "usdMin": 0,
+      "usdMax": 0,
+      "duration": "Según alcance",
+      "hours": 16,
+      "margin": 34,
+      "deliverables": "Posicionamiento, relato e identidad visual base.",
+      "recurring": false,
+      "source": "Matriz comercial y HH · valores ilustrativos · publicación pública",
+      "allocations": [
+        {
+          "profileId": "profile-3",
+          "hours": 6
+        },
+        {
+          "profileId": "profile-4",
+          "hours": 5
+        },
+        {
+          "profileId": "profile-5",
+          "hours": 3
+        },
+        {
+          "profileId": "profile-2",
+          "hours": 2
+        }
+      ]
+    },
+    {
+      "id": "S-03",
+      "name": "Branding completo",
+      "category": "Servicio individual",
+      "subtitle": "Proyecto",
+      "description": "Estrategia, identidad, aplicaciones y manual.",
+      "clpMin": 1975000,
+      "clpMax": 1975000,
+      "eurMin": 0,
+      "eurMax": 0,
+      "usdMin": 0,
+      "usdMax": 0,
+      "duration": "Según alcance",
+      "hours": 32,
+      "margin": 34,
+      "deliverables": "Estrategia, identidad, aplicaciones y manual.",
+      "recurring": false,
+      "source": "Matriz comercial y HH · valores ilustrativos · publicación pública",
+      "allocations": [
+        {
+          "profileId": "profile-3",
+          "hours": 10
+        },
+        {
+          "profileId": "profile-4",
+          "hours": 8
+        },
+        {
+          "profileId": "profile-5",
+          "hours": 10
+        },
+        {
+          "profileId": "profile-2",
+          "hours": 4
+        }
+      ]
+    },
+    {
+      "id": "S-04",
+      "name": "Landing page",
+      "category": "Servicio individual",
+      "subtitle": "Proyecto",
+      "description": "Diseño responsive, formulario y configuración inicial.",
+      "clpMin": 425000,
+      "clpMax": 425000,
+      "eurMin": 0,
+      "eurMax": 0,
+      "usdMin": 0,
+      "usdMax": 0,
+      "duration": "Según alcance",
+      "hours": 6,
+      "margin": 34,
+      "deliverables": "Diseño responsive, formulario y configuración inicial.",
+      "recurring": false,
+      "source": "Matriz comercial y HH · valores ilustrativos · publicación pública",
+      "allocations": [
+        {
+          "profileId": "profile-6",
+          "hours": 2
+        },
+        {
+          "profileId": "profile-7",
+          "hours": 3
+        },
+        {
+          "profileId": "profile-2",
+          "hours": 1
+        }
+      ]
+    },
+    {
+      "id": "S-05",
+      "name": "Página web 3 páginas",
+      "category": "Servicio individual",
+      "subtitle": "Proyecto",
+      "description": "Sitio base, formulario y configuración.",
+      "clpMin": 575000,
+      "clpMax": 575000,
+      "eurMin": 0,
+      "eurMax": 0,
+      "usdMin": 0,
+      "usdMax": 0,
+      "duration": "Según alcance",
+      "hours": 8,
+      "margin": 34,
+      "deliverables": "Sitio base, formulario y configuración.",
+      "recurring": false,
+      "source": "Matriz comercial y HH · valores ilustrativos · publicación pública",
+      "allocations": [
+        {
+          "profileId": "profile-6",
+          "hours": 2
+        },
+        {
+          "profileId": "profile-7",
+          "hours": 4
+        },
+        {
+          "profileId": "profile-12",
+          "hours": 1
+        },
+        {
+          "profileId": "profile-2",
+          "hours": 1
+        }
+      ]
+    },
+    {
+      "id": "S-06",
+      "name": "UX/UI diseño de interfaz",
+      "category": "Servicio individual",
+      "subtitle": "Proyecto",
+      "description": "Arquitectura, wireframes, diseño visual y prototipo.",
+      "clpMin": 1325000,
+      "clpMax": 1325000,
+      "eurMin": 0,
+      "eurMax": 0,
+      "usdMin": 0,
+      "usdMax": 0,
+      "duration": "Según alcance",
+      "hours": 20,
+      "margin": 34,
+      "deliverables": "Arquitectura, wireframes, diseño visual y prototipo.",
+      "recurring": false,
+      "source": "Matriz comercial y HH · valores ilustrativos · publicación pública",
+      "allocations": [
+        {
+          "profileId": "profile-1",
+          "hours": 2
+        },
+        {
+          "profileId": "profile-6",
+          "hours": 14
+        },
+        {
+          "profileId": "profile-2",
+          "hours": 2
+        },
+        {
+          "profileId": "profile-14",
+          "hours": 2
+        }
+      ]
+    },
+    {
+      "id": "S-07",
+      "name": "Desarrollo web a medida",
+      "category": "Servicio individual",
+      "subtitle": "Proyecto",
+      "description": "Frontend, backend e integraciones.",
+      "clpMin": 2775000,
+      "clpMax": 2775000,
+      "eurMin": 0,
+      "eurMax": 0,
+      "usdMin": 0,
+      "usdMax": 0,
+      "duration": "Según alcance",
+      "hours": 40,
+      "margin": 34,
+      "deliverables": "Frontend, backend e integraciones.",
+      "recurring": false,
+      "source": "Matriz comercial y HH · valores ilustrativos · publicación pública",
+      "allocations": [
+        {
+          "profileId": "profile-7",
+          "hours": 30
+        },
+        {
+          "profileId": "profile-6",
+          "hours": 4
+        },
+        {
+          "profileId": "profile-2",
+          "hours": 4
+        },
+        {
+          "profileId": "profile-14",
+          "hours": 2
+        }
+      ]
+    },
+    {
+      "id": "S-08",
+      "name": "Manejo de redes sociales",
+      "category": "Servicio individual",
+      "subtitle": "Fee mensual",
+      "description": "Canales, calendario, publicación y comunidad.",
+      "clpMin": 525000,
+      "clpMax": 525000,
+      "eurMin": 0,
+      "eurMax": 0,
+      "usdMin": 0,
+      "usdMax": 0,
+      "duration": "Mensual",
+      "hours": 8,
+      "margin": 34,
+      "deliverables": "Canales, calendario, publicación y comunidad.",
+      "recurring": true,
+      "source": "Matriz comercial y HH · valores ilustrativos · publicación pública",
+      "allocations": [
+        {
+          "profileId": "profile-13",
+          "hours": 5
+        },
+        {
+          "profileId": "profile-12",
+          "hours": 2
+        },
+        {
+          "profileId": "profile-2",
+          "hours": 1
+        }
+      ]
+    },
+    {
+      "id": "S-09",
+      "name": "Creación de contenido",
+      "category": "Servicio individual",
+      "subtitle": "Fee mensual",
+      "description": "Grilla, copies y dirección visual.",
+      "clpMin": 725000,
+      "clpMax": 725000,
+      "eurMin": 0,
+      "eurMax": 0,
+      "usdMin": 0,
+      "usdMax": 0,
+      "duration": "Mensual",
+      "hours": 10,
+      "margin": 34,
+      "deliverables": "Grilla, copies y dirección visual.",
+      "recurring": true,
+      "source": "Matriz comercial y HH · valores ilustrativos · publicación pública",
+      "allocations": [
+        {
+          "profileId": "profile-12",
+          "hours": 5
+        },
+        {
+          "profileId": "profile-4",
+          "hours": 2
+        },
+        {
+          "profileId": "profile-5",
+          "hours": 2
+        },
+        {
+          "profileId": "profile-2",
+          "hours": 1
+        }
+      ]
+    },
+    {
+      "id": "S-10",
+      "name": "Implementación CRM",
+      "category": "Servicio individual",
+      "subtitle": "Proyecto",
+      "description": "Pipeline, formularios, automatizaciones y reportería.",
+      "clpMin": 1675000,
+      "clpMax": 1675000,
+      "eurMin": 0,
+      "eurMax": 0,
+      "usdMin": 0,
+      "usdMax": 0,
+      "duration": "Según alcance",
+      "hours": 24,
+      "margin": 34,
+      "deliverables": "Pipeline, formularios, automatizaciones y reportería.",
+      "recurring": false,
+      "source": "Matriz comercial y HH · valores ilustrativos · publicación pública",
+      "allocations": [
+        {
+          "profileId": "profile-8",
+          "hours": 16
+        },
+        {
+          "profileId": "profile-1",
+          "hours": 2
+        },
+        {
+          "profileId": "profile-2",
+          "hours": 3
+        },
+        {
+          "profileId": "profile-10",
+          "hours": 1
+        },
+        {
+          "profileId": "profile-14",
+          "hours": 2
+        }
+      ]
+    },
+    {
+      "id": "S-11",
+      "name": "Automatización de procesos",
+      "category": "Servicio individual",
+      "subtitle": "Proyecto",
+      "description": "Flujos, notificaciones, documentos y tareas.",
+      "clpMin": 1325000,
+      "clpMax": 1325000,
+      "eurMin": 0,
+      "eurMax": 0,
+      "usdMin": 0,
+      "usdMax": 0,
+      "duration": "Según alcance",
+      "hours": 18,
+      "margin": 34,
+      "deliverables": "Flujos, notificaciones, documentos y tareas.",
+      "recurring": false,
+      "source": "Matriz comercial y HH · valores ilustrativos · publicación pública",
+      "allocations": [
+        {
+          "profileId": "profile-9",
+          "hours": 8
+        },
+        {
+          "profileId": "profile-8",
+          "hours": 4
+        },
+        {
+          "profileId": "profile-7",
+          "hours": 3
+        },
+        {
+          "profileId": "profile-2",
+          "hours": 2
+        },
+        {
+          "profileId": "profile-14",
+          "hours": 1
+        }
+      ]
+    },
+    {
+      "id": "S-12",
+      "name": "Bot o asistente IA",
+      "category": "Servicio individual",
+      "subtitle": "Proyecto",
+      "description": "Conversación, conocimiento, integración y pruebas.",
+      "clpMin": 1975000,
+      "clpMax": 1975000,
+      "eurMin": 0,
+      "eurMax": 0,
+      "usdMin": 0,
+      "usdMax": 0,
+      "duration": "Según alcance",
+      "hours": 26,
+      "margin": 34,
+      "deliverables": "Conversación, conocimiento, integración y pruebas.",
+      "recurring": false,
+      "source": "Matriz comercial y HH · valores ilustrativos · publicación pública",
+      "allocations": [
+        {
+          "profileId": "profile-9",
+          "hours": 14
+        },
+        {
+          "profileId": "profile-7",
+          "hours": 4
+        },
+        {
+          "profileId": "profile-12",
+          "hours": 2
+        },
+        {
+          "profileId": "profile-10",
+          "hours": 2
+        },
+        {
+          "profileId": "profile-2",
+          "hours": 2
+        },
+        {
+          "profileId": "profile-14",
+          "hours": 2
+        }
+      ]
+    },
+    {
+      "id": "S-13",
+      "name": "Dashboard / reportería",
+      "category": "Servicio individual",
+      "subtitle": "Proyecto",
+      "description": "Métricas, panel operativo y lectura de datos.",
+      "clpMin": 1025000,
+      "clpMax": 1025000,
+      "eurMin": 0,
+      "eurMax": 0,
+      "usdMin": 0,
+      "usdMax": 0,
+      "duration": "Según alcance",
+      "hours": 14,
+      "margin": 34,
+      "deliverables": "Métricas, panel operativo y lectura de datos.",
+      "recurring": false,
+      "source": "Matriz comercial y HH · valores ilustrativos · publicación pública",
+      "allocations": [
+        {
+          "profileId": "profile-10",
+          "hours": 8
+        },
+        {
+          "profileId": "profile-6",
+          "hours": 2
+        },
+        {
+          "profileId": "profile-7",
+          "hours": 2
+        },
+        {
+          "profileId": "profile-2",
+          "hours": 1
+        },
+        {
+          "profileId": "profile-14",
+          "hours": 1
+        }
+      ]
+    },
+    {
+      "id": "S-14",
+      "name": "Mantención y soporte web",
+      "category": "Servicio individual",
+      "subtitle": "Fee mensual",
+      "description": "Actualizaciones, ajustes menores y soporte.",
+      "clpMin": 275000,
+      "clpMax": 275000,
+      "eurMin": 0,
+      "eurMax": 0,
+      "usdMin": 0,
+      "usdMax": 0,
+      "duration": "Mensual",
+      "hours": 4,
+      "margin": 34,
+      "deliverables": "Actualizaciones, ajustes menores y soporte.",
+      "recurring": true,
+      "source": "Matriz comercial y HH · valores ilustrativos · publicación pública",
+      "allocations": [
+        {
+          "profileId": "profile-7",
+          "hours": 2
+        },
+        {
+          "profileId": "profile-14",
+          "hours": 1
+        },
+        {
+          "profileId": "profile-2",
+          "hours": 1
+        }
+      ]
+    },
+    {
+      "id": "S-15",
+      "name": "Gestión de campañas digitales",
+      "category": "Servicio individual",
+      "subtitle": "Fee mensual",
+      "description": "Meta Ads, Google Ads, seguimiento y optimización.",
+      "clpMin": 625000,
+      "clpMax": 625000,
+      "eurMin": 0,
+      "eurMax": 0,
+      "usdMin": 0,
+      "usdMax": 0,
+      "duration": "Mensual",
+      "hours": 8,
+      "margin": 34,
+      "deliverables": "Meta Ads, Google Ads, seguimiento y optimización.",
+      "recurring": true,
+      "source": "Matriz comercial y HH · valores ilustrativos · publicación pública",
+      "allocations": [
+        {
+          "profileId": "profile-11",
+          "hours": 5
+        },
+        {
+          "profileId": "profile-12",
+          "hours": 1
+        },
+        {
+          "profileId": "profile-10",
+          "hours": 1
+        },
+        {
+          "profileId": "profile-2",
+          "hours": 1
+        }
+      ]
+    },
+    {
+      "id": "media-24",
+      "name": "Producto Esencial",
+      "category": "Contenido Fotográfico",
+      "subtitle": "Producto",
+      "description": "Hasta 10 productos, 30 fotos finales, fondo blanco/neutro y retoque básico.",
+      "clpMin": 425000,
+      "clpMax": 425000,
+      "eurMin": 0,
+      "eurMax": 0,
+      "usdMin": 0,
+      "usdMax": 0,
+      "duration": "Proyecto",
+      "hours": 10,
+      "margin": 29,
+      "deliverables": "Hasta 10 productos, 30 fotos finales, fondo blanco/neutro y retoque básico.",
+      "recurring": false,
+      "source": "Matriz comercial y HH · valores ilustrativos · publicación pública",
+      "notes": "",
+      "allocations": []
+    },
+    {
+      "id": "media-25",
+      "name": "Producto + Redes",
+      "category": "Contenido Fotográfico",
+      "subtitle": "Producto + redes",
+      "description": "Producto, composición simple para redes, 35 a 45 fotos finales.",
+      "clpMin": 625000,
+      "clpMax": 625000,
+      "eurMin": 0,
+      "eurMax": 0,
+      "usdMin": 0,
+      "usdMax": 0,
+      "duration": "Proyecto",
+      "hours": 16,
+      "margin": 29,
+      "deliverables": "Producto, composición simple para redes, 35 a 45 fotos finales.",
+      "recurring": false,
+      "source": "Matriz comercial y HH · valores ilustrativos · publicación pública",
+      "notes": "",
+      "allocations": []
+    },
+    {
+      "id": "media-26",
+      "name": "Lifestyle Marca",
+      "category": "Contenido Fotográfico",
+      "subtitle": "Lifestyle",
+      "description": "Moodboard, locación simple, props básicos, producto en uso, 25 a 35 fotos.",
+      "clpMin": 825000,
+      "clpMax": 825000,
+      "eurMin": 0,
+      "eurMax": 0,
+      "usdMin": 0,
+      "usdMax": 0,
+      "duration": "Proyecto",
+      "hours": 22,
+      "margin": 29,
+      "deliverables": "Moodboard, locación simple, props básicos, producto en uso, 25 a 35 fotos.",
+      "recurring": false,
+      "source": "Matriz comercial y HH · valores ilustrativos · publicación pública",
+      "notes": "",
+      "allocations": []
+    },
+    {
+      "id": "media-27",
+      "name": "Campaña Producto + Lifestyle",
+      "category": "Contenido Fotográfico",
+      "subtitle": "Campaña",
+      "description": "Concepto, producto + lifestyle, styling básico, 50 a 70 fotos.",
+      "clpMin": 1325000,
+      "clpMax": 1325000,
+      "eurMin": 0,
+      "eurMax": 0,
+      "usdMin": 0,
+      "usdMax": 0,
+      "duration": "Proyecto",
+      "hours": 34,
+      "margin": 29,
+      "deliverables": "Concepto, producto + lifestyle, styling básico, 50 a 70 fotos.",
+      "recurring": false,
+      "source": "Matriz comercial y HH · valores ilustrativos · publicación pública",
+      "notes": "",
+      "allocations": []
+    },
+    {
+      "id": "media-28",
+      "name": "Contenido Mensual",
+      "category": "Contenido Fotográfico",
+      "subtitle": "Fee mensual",
+      "description": "Una sesión mensual, producto + lifestyle, 40 a 60 fotos.",
+      "clpMin": 975000,
+      "clpMax": 975000,
+      "eurMin": 0,
+      "eurMax": 0,
+      "usdMin": 0,
+      "usdMax": 0,
+      "duration": "Fee mensual",
+      "hours": 24,
+      "margin": 29,
+      "deliverables": "Una sesión mensual, producto + lifestyle, 40 a 60 fotos.",
+      "recurring": true,
+      "source": "Matriz comercial y HH · valores ilustrativos · publicación pública",
+      "notes": "",
+      "allocations": []
+    },
+    {
+      "id": "media-29",
+      "name": "Full Producción",
+      "category": "Contenido Fotográfico",
+      "subtitle": "Premium",
+      "description": "Campaña completa con dirección de arte, talento/locación si aplica, 80 a 120 fotos.",
+      "clpMin": 1975000,
+      "clpMax": 1975000,
+      "eurMin": 0,
+      "eurMax": 0,
+      "usdMin": 0,
+      "usdMax": 0,
+      "duration": "Proyecto premium",
+      "hours": 52,
+      "margin": 29,
+      "deliverables": "Campaña completa con dirección de arte, talento/locación si aplica, 80 a 120 fotos.",
+      "recurring": false,
+      "source": "Matriz comercial y HH · valores ilustrativos · publicación pública",
+      "notes": "",
+      "allocations": []
+    },
+    {
+      "id": "media-30",
+      "name": "Reels Edición",
+      "category": "Reels",
+      "subtitle": "Edición",
+      "description": "Edición de material entregado, 4 reels de 15 a 30 segundos.",
+      "clpMin": 225000,
+      "clpMax": 225000,
+      "eurMin": 0,
+      "eurMax": 0,
+      "usdMin": 0,
+      "usdMax": 0,
+      "duration": "Servicio puntual",
+      "hours": 6,
+      "margin": 29,
+      "deliverables": "Edición de material entregado, 4 reels de 15 a 30 segundos.",
+      "recurring": false,
+      "source": "Matriz comercial y HH · valores ilustrativos · publicación pública",
+      "notes": "",
+      "allocations": []
+    },
+    {
+      "id": "media-31",
+      "name": "Reels Express",
+      "category": "Reels",
+      "subtitle": "Express",
+      "description": "Jornada corta de grabación y 4 reels finales.",
+      "clpMin": 425000,
+      "clpMax": 425000,
+      "eurMin": 0,
+      "eurMax": 0,
+      "usdMin": 0,
+      "usdMax": 0,
+      "duration": "Proyecto corto",
+      "hours": 12,
+      "margin": 29,
+      "deliverables": "Jornada corta de grabación y 4 reels finales.",
+      "recurring": false,
+      "source": "Matriz comercial y HH · valores ilustrativos · publicación pública",
+      "notes": "",
+      "allocations": []
+    },
+    {
+      "id": "media-32",
+      "name": "Reels Producto",
+      "category": "Reels",
+      "subtitle": "Producto",
+      "description": "Guion simple, tomas detalle, producto en uso y 6 reels finales.",
+      "clpMin": 625000,
+      "clpMax": 625000,
+      "eurMin": 0,
+      "eurMax": 0,
+      "usdMin": 0,
+      "usdMax": 0,
+      "duration": "Proyecto",
+      "hours": 18,
+      "margin": 29,
+      "deliverables": "Guion simple, tomas detalle, producto en uso y 6 reels finales.",
+      "recurring": false,
+      "source": "Matriz comercial y HH · valores ilustrativos · publicación pública",
+      "notes": "",
+      "allocations": []
+    },
+    {
+      "id": "media-33",
+      "name": "Reels Lifestyle",
+      "category": "Reels",
+      "subtitle": "Lifestyle",
+      "description": "Concepto, dirección de escena, grabación lifestyle y 6 reels finales.",
+      "clpMin": 825000,
+      "clpMax": 825000,
+      "eurMin": 0,
+      "eurMax": 0,
+      "usdMin": 0,
+      "usdMax": 0,
+      "duration": "Proyecto",
+      "hours": 24,
+      "margin": 29,
+      "deliverables": "Concepto, dirección de escena, grabación lifestyle y 6 reels finales.",
+      "recurring": false,
+      "source": "Matriz comercial y HH · valores ilustrativos · publicación pública",
+      "notes": "",
+      "allocations": []
+    },
+    {
+      "id": "media-34",
+      "name": "Reels Mensual",
+      "category": "Reels",
+      "subtitle": "Fee mensual",
+      "description": "Sesión mensual, plan de ideas y 8 reels mensuales.",
+      "clpMin": 975000,
+      "clpMax": 975000,
+      "eurMin": 0,
+      "eurMax": 0,
+      "usdMin": 0,
+      "usdMax": 0,
+      "duration": "Fee mensual",
+      "hours": 28,
+      "margin": 29,
+      "deliverables": "Sesión mensual, plan de ideas y 8 reels mensuales.",
+      "recurring": true,
+      "source": "Matriz comercial y HH · valores ilustrativos · publicación pública",
+      "notes": "",
+      "allocations": []
+    },
+    {
+      "id": "media-35",
+      "name": "Campaña Reels",
+      "category": "Reels",
+      "subtitle": "Campaña",
+      "description": "Concepto, guiones, producto + lifestyle, 10 a 12 reels.",
+      "clpMin": 1425000,
+      "clpMax": 1425000,
+      "eurMin": 0,
+      "eurMax": 0,
+      "usdMin": 0,
+      "usdMax": 0,
+      "duration": "Proyecto campaña",
+      "hours": 42,
+      "margin": 29,
+      "deliverables": "Concepto, guiones, producto + lifestyle, 10 a 12 reels.",
+      "recurring": false,
+      "source": "Matriz comercial y HH · valores ilustrativos · publicación pública",
+      "notes": "",
+      "allocations": []
+    },
+    {
+      "id": "media-36",
+      "name": "Full Reels Producción",
+      "category": "Reels",
+      "subtitle": "Premium",
+      "description": "Dirección de arte, cámara/iluminación, locación o espacio y 12 a 16 reels.",
+      "clpMin": 1975000,
+      "clpMax": 1975000,
+      "eurMin": 0,
+      "eurMax": 0,
+      "usdMin": 0,
+      "usdMax": 0,
+      "duration": "Proyecto premium",
+      "hours": 60,
+      "margin": 29,
+      "deliverables": "Dirección de arte, cámara/iluminación, locación o espacio y 12 a 16 reels.",
+      "recurring": false,
+      "source": "Matriz comercial y HH · valores ilustrativos · publicación pública",
+      "notes": "",
+      "allocations": []
+    },
+    {
+      "id": "offer-sprint",
+      "name": "Brand Reset Sprint",
+      "subtitle": "La claridad es el primer movimiento.",
+      "description": "Diagnóstico, posicionamiento y una hoja de ruta para la próxima etapa.",
+      "eurMin": 850,
+      "eurMax": 1350,
+      "usdMin": 1050,
+      "usdMax": 1650,
+      "clpMin": 0,
+      "clpMax": 0,
+      "duration": "2 semanas",
+      "hours": 24,
+      "margin": 64,
+      "deliverables": "Sesión estratégica\nAuditoría de marca y presencia digital\nTerritorio de posicionamiento\nRoadmap de 90 días",
+      "recurring": false,
+      "category": "Internacional",
+      "source": "Matriz comercial y HH · valores ilustrativos · publicación pública",
+      "allocations": []
+    },
+    {
+      "id": "offer-launch",
+      "name": "Brand & Digital Launch",
+      "subtitle": "Una nueva etapa. Un sistema completo.",
+      "description": "Estrategia, narrativa, identidad visual y una experiencia digital que convierte.",
+      "eurMin": 3850,
+      "eurMax": 7150,
+      "usdMin": 5550,
+      "usdMax": 9850,
+      "clpMin": 0,
+      "clpMax": 0,
+      "duration": "6–8 semanas",
+      "hours": 80,
+      "margin": 59,
+      "deliverables": "Estrategia y narrativa de marca\nSistema de identidad visual\nWeb o landing responsive\nKit de lanzamiento",
+      "recurring": false,
+      "category": "Internacional",
+      "source": "Matriz comercial y HH · valores ilustrativos · publicación pública",
+      "allocations": []
+    },
+    {
+      "id": "offer-partner",
+      "name": "Fractional Creative Partner",
+      "subtitle": "Dirección creativa. Crecimiento continuo.",
+      "description": "Un equipo senior integrado a tu negocio para diseñar lo que viene.",
+      "eurMin": 1350,
+      "eurMax": 2750,
+      "usdMin": 2050,
+      "usdMax": 4450,
+      "clpMin": 0,
+      "clpMax": 0,
+      "duration": "Mensual",
+      "hours": 40,
+      "margin": 59,
+      "deliverables": "Dirección creativa continua\nPlan de crecimiento mensual\nDiseño e implementación\nReporte de impacto",
+      "recurring": true,
+      "category": "Internacional",
+      "source": "Matriz comercial y HH · valores ilustrativos · publicación pública",
+      "allocations": []
+    }
+  ]
+}
