@@ -1,3 +1,5 @@
+// La misma CSP se declara en vercel.json para los archivos estáticos, que Vercel
+// sirve sin pasar por Express.
 export const contentSecurityPolicy = "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'none'; frame-ancestors 'none'; form-action 'self'";
 
 export function securityHeaders(production) {
