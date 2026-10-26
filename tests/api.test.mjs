@@ -7,6 +7,7 @@ import { DatabaseSync } from "node:sqlite";
 import { tmpdir } from "node:os";
 import { join } from "node:path";
 import { today } from "../shared/domain.mjs";
+import { team } from "../server/team.mjs";
 
 const dir = mkdtempSync(join(tmpdir(), "planozero-test-"));
 const port = 15173;
@@ -130,7 +131,7 @@ test("Dirección provisiona las tres cuentas ejecutivas con claves aleatorias de
   executives = r.data.users;
   assert.deepEqual(
     executives.map((u) => u.email),
-    ["raul@planozero.cl", "vale@planozero.cl", "dany@planozero.cl"],
+    team.map(([, email]) => email),
   );
   assert.ok(executives.every((u) => u.created && u.role === "Comercial"));
   assert.ok(executives.every((u) => u.password.length >= 32));
@@ -588,21 +589,21 @@ test("each executive role writes and reads only what the role allows", async () 
   );
 });
 test("password reset revokes the user's sessions and only the new password works", async () => {
-  const raul = executives.find((u) => u.email === "raul@planozero.cl");
-  const raulSession = await login(raul);
-  assert.equal((await request("/state", "GET", undefined, raulSession)).status, 200);
-  const newPassword = "Raul-Reset-Password-2026";
-  const reset = await request(`/users/${raul.id}/password`, "PUT", { newPassword });
+  const exec = executives[0];
+  const execSession = await login(exec);
+  assert.equal((await request("/state", "GET", undefined, execSession)).status, 200);
+  const newPassword = "Ejecutivo-Reset-Password-2026";
+  const reset = await request(`/users/${exec.id}/password`, "PUT", { newPassword });
   assert.equal(reset.status, 200);
-  assert.equal((await request("/state", "GET", undefined, raulSession)).status, 401);
+  assert.equal((await request("/state", "GET", undefined, execSession)).status, 401);
   assert.equal(
-    (await request("/login", "POST", raul, "")).status,
+    (await request("/login", "POST", exec, "")).status,
     401,
   );
   const fresh = await request(
     "/login",
     "POST",
-    { email: raul.email, password: newPassword },
+    { email: exec.email, password: newPassword },
     "",
   );
   assert.equal(fresh.status, 200);
@@ -650,13 +651,13 @@ test("login limits failures per account but never counts successful logins", asy
     assert.equal(bad.status, 401);
   }
   assert.equal((await request("/login", "POST", locked, "")).status, 429);
-  const raul = executives.find((u) => u.email === "raul@planozero.cl");
-  const password = "Raul-Reset-Password-2026";
+  const exec = executives[0];
+  const password = "Ejecutivo-Reset-Password-2026";
   for (let i = 0; i < 25; i++) {
     const success = await request(
       "/login",
       "POST",
-      { email: raul.email, password },
+      { email: exec.email, password },
       "",
     );
     assert.equal(success.status, 200, `login correcto #${i + 1}`);

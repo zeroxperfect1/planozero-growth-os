@@ -10,6 +10,7 @@ import {zodMessages} from '../shared/errors.mjs';
 import {canWrite as sharedCanWrite,keepsOwner as sharedKeepsOwner} from '../shared/permissions.mjs';
 import {isCompanyEmail,normalizeEmail} from '../shared/auth.mjs';
 import {securityHeaders,allowedWriteOrigin} from './security.mjs';
+import {team} from './team.mjs';
 const root=fileURLToPath(new URL('../',import.meta.url));
 export const app=express();
 let storePromise;
@@ -114,7 +115,7 @@ app.get('/api/users',admin,async(req,res)=>res.json(await req.store.query('SELEC
 app.post('/api/users',admin,async(req,res)=>{const data=userSchema.parse(req.body);if(await req.store.one('SELECT id FROM users WHERE email=? OR name=?',[data.email,data.name]))return fail(res,409,'Ya existe un usuario con ese nombre o correo.');const u={...data,id:randomUUID()};await req.store.query('INSERT INTO users VALUES(?,?,?,?,?)',[u.id,u.name,u.email,await passwordHash(u.password),u.role]);res.status(201).json(publicUser(u));});
 app.put('/api/users/:id/password',admin,async(req,res)=>{const{newPassword}=resetPasswordSchema.parse(req.body);const user=await req.store.one('SELECT id FROM users WHERE id=?',[req.params.id]);if(!user)return fail(res,404,'Usuario no encontrado.');await req.store.transaction(async()=>{await req.store.query('UPDATE users SET password=? WHERE id=?',[await passwordHash(newPassword),user.id]);await req.store.query('DELETE FROM sessions WHERE user_id=?',[user.id]);});res.json({ok:true});});
 app.post('/api/users/provision-executives',admin,async(req,res)=>{
-  const requested=[['Raúl','raul@planozero.cl'],['Vale','vale@planozero.cl'],['Dany','dany@planozero.cl']];const users=[];
+  const requested=team;const users=[];
   await req.store.transaction(async()=>{for(const[name,email]of requested){const existing=await req.store.one('SELECT id,name,email,role FROM users WHERE email=?',[email]);if(existing){users.push({...publicUser(existing),created:false});continue;}if(await req.store.one('SELECT id FROM users WHERE name=?',[name])){const e=new Error(`Ya existe un usuario llamado ${name} con otro correo.`);e.status=409;throw e;}const password=randomBytes(24).toString('base64url');const data=userSchema.parse({name,email,password,role:'Comercial'});const user={...data,id:randomUUID()};await req.store.query('INSERT INTO users VALUES(?,?,?,?,?)',[user.id,user.name,user.email,await passwordHash(password),user.role]);users.push({...publicUser(user),password,created:true});}});
   res.status(201).json({users});
 });

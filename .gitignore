@@ -13,3 +13,4 @@ test-results/
 .env*
 supabase/.temp/
 server/catalog.private.json
+server/team.private.json

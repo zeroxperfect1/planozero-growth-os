@@ -299,7 +299,7 @@ Panel de conversiones, ingresos, rentabilidad, velocidad comercial, contenido y 
 | Probabilidad | Porcentaje | 40% |
 | Próxima acción | Texto | Enviar seguimiento |
 | Fecha próxima acción | Fecha | 2026-11-04 |
-| Responsable | Usuario | Raúl |
+| Responsable | Usuario | Dirección |
 
 ### Entidad: Iniciativa
 

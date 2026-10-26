@@ -1,6 +1,10 @@
 # PLANOZERO Growth OS
 
-Centro de mando de crecimiento internacional para PLANOZERO, desarrollado a partir de `public/estrategia-planozero.md`. Interfaz en español, responsive, con fondo grafito y naranja de acción.
+Centro de mando de crecimiento internacional para PLANOZERO, desarrollado a partir de `server/estrategia-planozero.md`. Interfaz en español, responsive, con fondo grafito y naranja de acción.
+
+![Command Center de PLANOZERO Growth OS](docs/planozero-dashboard.png)
+
+_Captura del Command Center con datos de ejemplo. El producto no trae datos de fábrica: cada espacio parte del catálogo de servicios y de las iniciativas del plan, sin clientes ni cifras reales._
 
 ## Ejecutar
 
@@ -26,7 +30,7 @@ La aplicación **exige una cuenta del equipo**: no hay acceso de demostración n
 1. Abrir **http://localhost:5173**. Si el espacio aún no está configurado, la pantalla inicial pide crear la **cuenta de Dirección** con correo `@planozero.cl` y una contraseña de al menos 10 caracteres.
 2. El espacio real empieza con el catálogo de **39 servicios y packs** y los **14 perfiles** de la matriz interna, más las doce iniciativas estratégicas. No contiene contactos, ingresos ni proyectos de ejemplo.
 3. En Configuración, ajustar metas, capacidad, moneda de reporting y tasas de planificación. Los precios CLP deben definirse en la ficha de cada oferta.
-4. Desde **Configuración → Equipo y acceso**, Dirección puede generar las cuentas de **Raúl, Vale y Dany** como ejecutivos Comerciales. El sistema crea contraseñas aleatorias y las muestra una sola vez para compartirlas por un canal privado. Para otros integrantes, usar **Agregar integrante**.
+4. Desde **Configuración → Equipo y acceso**, Dirección puede generar las tres cuentas de los ejecutivos comerciales. El sistema crea contraseñas aleatorias y las muestra una sola vez para compartirlas por un canal privado. Para otros integrantes, usar **Agregar integrante**.
 
 Solo se permite crear el primer administrador antes de configurar el espacio. En producción, esa activación exige `SETUP_TOKEN` (mínimo 32 caracteres). Cada integrante puede cambiar su contraseña; Dirección puede restablecerla y revocar sus sesiones. No se envía correo de invitación ni hay recuperación por correo o MFA.
 
@@ -52,7 +56,7 @@ Solo se permite crear el primer administrador antes de configurar el espacio. En
 ## Datos y cálculo
 
 - **Espacio real:** `data/growth.sqlite` con WAL. Usuarios, sesiones, entidades y configuración persisten en SQLite. `data/` está ignorado por Git. No hay datos de demostración ni copia en el navegador.
-- **Catálogo:** `server/catalog.json` (versión `2026-10-catalog-v4`) se carga en el primer inicio de cada espacio: 39 servicios y packs con sus HH por perfil, y 14 perfiles con costo interno por HH. **El repositorio publica valores ilustrativos**: precios, márgenes y costos por hora no son los reales. La matriz comercial verdadera vive en `server/catalog.private.json`, un archivo local e ignorado por Git que el servidor usa en su lugar cuando existe; si no existe, se cargan las cifras ilustrativas del repositorio. Dirección puede editar o desactivar perfiles; desactivar un perfil conserva las cotizaciones y asignaciones que lo usan, permite seguir editando borradores y cotizar ofertas que ya lo incluyen, pero no agregarlo a una línea nueva.
+- **Catálogo:** `server/catalog.json` (versión `2026-10-catalog-v4`) se carga en el primer inicio de cada espacio: 39 servicios y packs con sus HH por perfil, y 14 perfiles con costo interno por HH. **El repositorio publica valores ilustrativos**: precios, márgenes y costos por hora no son los reales. La matriz comercial verdadera vive en `server/catalog.private.json`, un archivo local e ignorado por Git que el servidor usa en su lugar cuando existe; si no existe, se cargan las cifras ilustrativas del repositorio. Lo mismo aplica al equipo: `server/team.json` trae cuentas de ejemplo y `server/team.private.json` (también ignorado) trae las cuentas reales que Dirección genera. Dirección puede editar o desactivar perfiles; desactivar un perfil conserva las cotizaciones y asignaciones que lo usan, permite seguir editando borradores y cotizar ofertas que ya lo incluyen, pero no agregarlo a una línea nueva.
 - **Monedas:** se conserva la moneda de cada oportunidad/proyecto. Los totales se convierten a la moneda de reporting con tasas editables. EUR/USD 1,09 y USD/CLP 950 son valores demostrativos de planificación, **no cotizaciones en vivo**.
 - **Precio de cotización:** `neto = costo directo ÷ (1 − comisión − margen adicional)`, con `costo directo = horas × costo del perfil + otros costos`. La comisión de agencia es un porcentaje de la venta, no un recargo sobre el costo, y el margen adicional es la utilidad. El servidor recalcula siempre los totales: el cliente no puede fijar el precio.
 - **Snapshot comercial:** al marcar una cotización como enviada, quedan congelados tarifas, horas, comisión, margen, costos y tipos de cambio. Cambiar las tarifas de los perfiles no altera una cotización ya enviada; para modificar el alcance hay que duplicarla.
@@ -82,7 +86,7 @@ La matriz de permisos es un único archivo (`shared/permissions.mjs`) que usan l
 - **Supabase:** proyecto `planozero-growth-os`, PostgreSQL en São Paulo (`sa-east-1`), compartido por el pooler transaccional para serverless.
 - Vercel guarda `DATABASE_URL` y `SETUP_TOKEN` como secretos de producción. `DATABASE_URL` usa TLS con la CA raíz oficial de Supabase (`server/supabase-ca.crt`), verificación del certificado y pool local de una conexión por instancia.
 - La página está publicada y requiere una cuenta del equipo: entra con el correo de Dirección `@planozero.cl` y el código de activación. Después de crear Dirección, la aplicación rechaza nuevas activaciones; se puede retirar `SETUP_TOKEN` de Vercel.
-- Luego, desde **Configuración → Equipo y acceso**, generar las cuentas de Raúl, Vale y Dany. Las contraseñas se muestran una sola vez.
+- Luego, desde **Configuración → Equipo y acceso**, generar las tres cuentas de los ejecutivos comerciales. Las contraseñas se muestran una sola vez.
 
 ## Configuración de servidor
 
@@ -103,12 +107,17 @@ Genera un token de activación nuevo con `node -e "console.log(require('node:cry
 ```text
 src/             React, componentes, pantallas, cálculo de métricas y estilos
 shared/          Datos estratégicos, semillas, permisos, errores y funciones de dominio
-server/          Express, SQLite/PostgreSQL, catálogo, CA de Supabase, validación y autorización
-public/          Favicon y documento maestro
+server/          Express, SQLite/PostgreSQL, catálogo, equipo, CA de Supabase, validación y autorización
+public/          Favicon y tipografías
+docs/            Captura del producto
 tests/          Pruebas de dominio, catálogo, cálculo y API con SQLite/PostgreSQL temporal aislado
 ```
 
 Stack: React + TypeScript + Vite, Express, Zod, SQLite/PostgreSQL y Lucide. Las tipificaciones están incluidas localmente. No hay integración con CRM externo, correo, facturación, scraping o IA comercial en este MVP.
+
+## Licencia
+
+MIT. Ver [LICENSE](LICENSE).
 
 ## Verificación
 

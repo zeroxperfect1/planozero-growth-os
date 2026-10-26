@@ -179,7 +179,7 @@ export function Settings() {
                       }}
                     >
                       <Users size={15} />
-                      Generar cuentas de Raúl, Vale y Dany
+                      Generar las tres cuentas comerciales
                     </button>
                     <button className="button" onClick={() => setAdd(true)}>
                       <Plus size={15} />
@@ -256,7 +256,7 @@ export function Settings() {
               <input
                 name="email"
                 type="email"
-                placeholder="raul@planozero.cl"
+                placeholder="nombre@planozero.cl"
                 autoCapitalize="none"
                 autoCorrect="off"
                 spellCheck={false}

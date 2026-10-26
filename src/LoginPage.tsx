@@ -97,7 +97,7 @@ export function LoginPage() {
                 autoCapitalize="none"
                 autoCorrect="off"
                 spellCheck={false}
-                placeholder="raul@planozero.cl"
+                placeholder="nombre@planozero.cl"
               />
             </label>
             <label className="field">
